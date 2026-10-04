@@ -298,8 +298,8 @@ Proxmox VE achieved higher CPU throughput and lower average latency in the condu
 
 ---
 
-# 8. Name and USN
+# 8. Author and USN
 
-**Name:** Anupriya Savant
+**Author:** Anushree Angadi
 
-**USN:** 01FE24BCI046
+**USN:** 01FE24BCI050
