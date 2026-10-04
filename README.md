@@ -66,30 +66,30 @@ Proxmox VE is a **Type-1 (bare-metal) hypervisor**. It runs directly on the phys
 The following commands were executed inside the **Ubuntu VM**:
 
 ```bash
-hostnamectl
-lscpu
-free -h
-df -h
-top
+hostnamectl - Shows the system/VM name and OS details
+lscpu -Shows CPU information such as cores, threads, architecture, and speed.
+free -h-Shows RAM/memory usage in human-readable format.
+df -h-Shows disk/storage space used and available.
+top-Displays real-time CPU, memory, and process usage.
 ```
 
 ### Installing Sysbench
 
 ```bash
-sudo apt update
-sudo apt install sysbench -y
+sudo apt update-Updates the list of available software packages.
+sudo apt install sysbench -y -Installs the Sysbench performance testing tool.
 ```
 
 ### Checking Sysbench Version
 
 ```bash
-sysbench --version
+sysbench --version -Displays the installed Sysbench version.
 ```
 
 ### Running CPU Benchmark
 
 ```bash
-sysbench cpu --cpu-max-prime=20000 run
+sysbench cpu --cpu-max-prime=20000 run-Performs a CPU performance test by calculating prime numbers up to 20,000.
 ```
 
 The benchmark was executed for approximately **10 seconds using 1 thread**.
